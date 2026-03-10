@@ -1,0 +1,71 @@
+// 1. Variables
+$primary-color: #00ffcc;
+$bg-dark: #0f172a;
+$text-light: #f8fafc;
+$font-main: 'Poppins', sans-serif;
+
+// 2. General Settings
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $bg-dark;
+    color: $text-light;
+    line-height: 1.6;
+}
+
+// 3. Navbar
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    background: rgba(15, 23, 42, 0.9);
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+    .logo {
+        font-size: 1.5rem;
+        font-weight: 600;
+        span { color: $primary-color; }
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+
+        li {
+            margin-left: 20px;
+            
+            a {
+                text-decoration: none;
+                color: $text-light;
+                transition: color 0.3s;
+
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+// 4. Hero Section
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1 {
+        font-size: 4rem;
+        span { color: $primary-color; }
+    }
+}
