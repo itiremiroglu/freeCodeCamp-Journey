@@ -1,0 +1,31 @@
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.sub-item {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+.sub-item-link {
+  text-decoration: none;
+  color: blue;
+}
+
+.sub-item-link:visited {
+  color: purple;
+}
+
+.sub-item-link:hover {
+  color: red;
+}
+
+.sub-item-link:focus {
+  outline: 2px solid orange;
+}
+
+.sub-item-link:active {
+  color: green;
+}
