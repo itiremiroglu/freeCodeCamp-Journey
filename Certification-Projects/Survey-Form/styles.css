@@ -46,13 +46,12 @@ input[type="number"],
 select,
 textarea {
   width: 100%;
-  min-height: 2.375rem;
-  padding: 0.375rem 0.75rem;
   color: #495057;
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   margin-bottom: 1.25rem;
+  padding: 0.625rem;
   font-family: inherit;
 }
 
@@ -67,7 +66,6 @@ input[type="radio"] {
 
 textarea {
   min-height: 120px;
-  padding: 0.625rem;
   resize: vertical;
 }
 
