@@ -1,0 +1,87 @@
+span {
+  display: inline-block;
+}
+
+.title {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+tr[class="read"] {
+  background-image: linear-gradient(#a2ff9c, #56eb4b);
+}
+
+tr[class="to-read"] {
+  background-image: linear-gradient(#f2f2f2, #ddd);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(#ffe4b5, #ffd460);
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #ff0000;
+  background-image: linear-gradient(#ff6b6b, #ff0000);
+}
+
+tr[class="read"] span[class="status"] {
+  border: 1px solid #28a745;
+  background-image: linear-gradient(#56eb4b, #28a745);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #f0a500;
+  background-image: linear-gradient(#ffd460, #f0a500);
+}
+
+span[class="status"],
+span[class^="rate"] {
+  height: 25px;
+  width: 100px;
+  padding: 2px;
+}
+
+span[class^="rate"] > span {
+  border: 1px solid #555;
+  border-radius: 50%;
+  margin: 2px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* 48-49: Sınıfında 'one' kelimesi geçen span'ın ilk alt ögesi */
+span[class~="one"] :first-child {
+  background-image: linear-gradient(#ffd700, #ffa500);
+}
+
+/* 50-51: Sınıfında 'two' kelimesi geçen span'ın ilk iki alt ögesi */
+span[class~="two"] :nth-child(-n + 2) {
+  background-image: linear-gradient(#ffd700, #ffa500);
+}
+
+/* 52-53: Sınıfında 'three' kelimesi geçen span'ın içindeki tüm span'lar */
+span[class~="three"] span {
+  background-image: linear-gradient(#ffd700, #ffa500);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #8edcfa;
+}
